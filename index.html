@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hikoki Magic</title>
+    <!-- ICONES -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <!-- SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MODAL STYLES -->
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        padding-top: 0; /* No padding on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: hidden; /* Disable scroll */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Black background with opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        color: black;
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        border-radius: 8px;
+      }
+
+      /* The Close Button */
+      .close {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div id="promoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>特別オファー！</h2>
+        <p>今ならHikoki Magicで初回予約時に10%割引！</p>
+        <p>さらに、友達紹介で次回のフライトが無料に！</p>
+        <p>早い者勝ち！お見逃しなく！</p>
+      </div>
+    </div>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="">Hikoki<span>Magic.</span></a>
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home"> ホーム </a></li>
+            <li><a class="title" href="#about"> 会社概要 </a></li>
+            <li><a class="title" href="#services"> サービス </a></li>
+            <li><a class="title" href="#testimonials"> お客様の声 </a></li>
+            <li><a class="title" href="#contact"> お問い合わせ </a></li>
+          </ul>
+        </div>
+        <!-- /menu-->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+    <main>
+      <!--HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="assets/fotos/plane1.jpg" alt="飛行機のチケット" />
+          </div>
+          <div class="text">
+            <h2 class="title">最安のフライトチケットを簡単に</h2>
+            <p>
+              Hikoki
+              Magicは市場で最もお得な航空券を見つけ、ワンコールで即座に予約します。テクノロジーが苦手な方でも安心です。郵送でチケットをお届けします。
+            </p>
+            <a class="button" href="#"> 今すぐ予約 </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+      <!--ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="assets/fotos/plane2.jpg" alt="飛行機のチケット予約" />
+          </div>
+          <div class="text">
+            <h2 class="title">会社概要</h2>
+            <p>
+              Hikoki
+              Magicは、お客様に最適なフライトチケットを提供するために設立されました。市場での最安値を保証し、どんなご要望にも迅速に対応します。
+            </p>
+            <br />
+            <p>
+              テクノロジーに不慣れな方も、電話一本で簡単に航空券を予約できます。さらに、郵送でのチケット配達も承っておりますので、安心してご利用いただけます。
+            </p>
+            <br />
+            <p>
+              お客様の旅が快適でスムーズになるよう、私たちは常に最善を尽くします。お得で迅速なサービスを提供することをお約束します。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+      <!--SERVICES -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">サービス</h2>
+            <p class="subtitle">
+              Hikoki
+              Magicは、最安値の航空券を市場で見つけ、即座に予約することを専門としています。郵送でのチケット配達サービスも提供しています。
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">最安航空券の検索</h3>
+              <p>お客様のご希望に合わせて、最適で最安の航空券を検索します。</p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">ワンコールで予約</h3>
+              <p>
+                お電話一本で、希望のフライトを瞬時に予約できます。忙しい方やテクノロジーが苦手な方に最適です。
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">郵送チケット配達</h3>
+              <p>
+                オンラインでのチケット購入に不安がある方には、郵送でチケットをお届けします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+
+      <!--TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container swiper">
+          <header>
+            <h2 class="title">お客様の声</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span> &ldquo; </span>
+                    Hikoki
+                    Magicを利用して、とても満足しています！いつも最安値のチケットを見つけてくれ、迅速な対応に感謝しています。郵送サービスも便利でした。
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/tres.jpg" alt="ユーザーの写真" />
+                    山田太郎
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span> &ldquo; </span>
+                    テクノロジーが苦手な私でも、電話一本で簡単に予約ができました。Hikoki
+                    Magicのスタッフはとても親切で、迅速に対応してくれました。
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/duas.jpg" alt="ユーザーの写真" />
+                    佐藤花子
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span> &ldquo; </span>
+                    最安のチケットをすぐに見つけてくれるので、出張の多い私にはとても助かります。Hikoki
+                    Magicを強くお勧めします！
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/uma.jpg" alt="ユーザーの写真" />
+                    鈴木一郎
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <div class="divider-2"></div>
+
+      <!--CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">お問い合わせ</h2>
+            <p>
+              Hikoki
+              Magicへのお問い合わせは、下記の連絡先までお気軽にどうぞ。どんな質問にも迅速にお答えします。
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=81123456789&text=こんにちは！ 航空券の予約について教えてください。"
+              class="button"
+              target="_blank"
+            >
+              <i class="icon-whatsapp"></i>
+              お問い合わせ</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"> </i> 03-1234-5678</li>
+              <li><i class="icon-map-pin"> </i> 東京都港区南青山1-1-1</li>
+              <li><i class="icon-mail"> </i> contact@hikokimagic.jp</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="divider-2"></div>
+
+      <!--ADS HEADLINES & DESCRIPTIONS -->
+      <section class="section" id="ads">
+        <div class="container grid">
+          <div class="ads-content">
+            <div class="ad">
+              <h3 class="title">激安航空券を即予約</h3>
+              <p class="desc-30">最安値保証の航空券を見つける</p>
+              <p class="desc-90">
+                Hikoki
+                Magicなら、ワンコールで激安航空券を即予約。今すぐチェック。
+              </p>
+            </div>
+            <div class="ad">
+              <h3 class="title">電話一本で簡単予約</h3>
+              <p class="desc-30">忙しい方にぴったり</p>
+              <p class="desc-90">
+                お忙しい方でも、Hikoki
+                Magicで電話一本で簡単に航空券を予約できます。
+              </p>
+            </div>
+            <div class="ad">
+              <h3 class="title">郵送チケット配達</h3>
+              <p class="desc-30">安心の郵送サービス</p>
+              <p class="desc-90">
+                オンラインが苦手な方も安心。チケットを自宅まで郵送します。
+              </p>
+            </div>
+            <div class="ad">
+              <h3 class="title">お得なフライト探し</h3>
+              <p class="desc-30">最安の航空券をお届け</p>
+              <p class="desc-90">
+                Hikoki Magicは常に市場の最安航空券を検索。お得に旅行を楽しもう。
+              </p>
+            </div>
+            <div class="ad">
+              <h3 class="title">即予約でスムーズ旅行</h3>
+              <p class="desc-30">ワンコールで完了</p>
+              <p class="desc-90">
+                ワンコールでスムーズに予約。旅行がもっと簡単で快適になります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="divider-2"></div>
+    </main>
+    <!--FOOTER -->
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a href="#home" class="logo logo-alt">Hikoki<span>Magic.</span></a>
+          <p>©2024 Hikoki Magic.</p>
+          <p>全著作権所有。</p>
+        </div>
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <a href="#home" class="back-to-top"> <i class="icon-arrow-up"></i> </a>
+    <!--SWIPER-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--SCROLLREVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--MAIN.JS-->
+    <script src="main.js"></script>
+    <!-- MODAL SCRIPT -->
+    <!-- MODAL SCRIPT -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("promoModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks anywhere outside the modal content, close the modal
+      modal.onclick = function (event) {
+        // Check if the click is outside the modal content
+        if (event.target == modal || event.target.closest(".modal-content")) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Open the modal as soon as the website loads
+      window.onload = function () {
+        modal.style.display = "block";
+      };
+    </script>
+  </body>
+</html>
