@@ -24,7 +24,6 @@
     <style>
       /* The Modal (background) */
       .modal {
-        display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1000; /* Sit on top */
         padding-top: 0; /* No padding on top */
@@ -361,11 +360,6 @@
         if (event.target == modal || event.target.closest(".modal-content")) {
           modal.style.display = "none";
         }
-      };
-
-      // Open the modal as soon as the website loads
-      window.onload = function () {
-        modal.style.display = "block";
       };
     </script>
   </body>
