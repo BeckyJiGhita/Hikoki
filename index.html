@@ -16,45 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .modal {
-        position: fixed;
-        z-index: 1000;
-        padding-top: 0;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .modal-content {
-        color: black;
-        background-color: #fefefe;
-        margin: 10% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 500px;
-        text-align: center;
-        border-radius: 8px;
-      }
-
-      .close {
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    </style>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-16686858149"
@@ -70,12 +31,6 @@
     </script>
   </head>
   <body>
-    <div id="promoModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="assets/fotos/hikoki3.webp" />
-      </div>
-    </div>
     <header id="header">
       <nav class="container">
         <a class="logo" href="">Hikoki<span>Magic.</span></a>
@@ -318,16 +273,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
-    <script>
-      var modal = document.getElementById("promoModal");
-
-      var span = document.getElementsByClassName("close")[0];
-
-      modal.onclick = function (event) {
-        if (event.target == modal || event.target.closest(".modal-content")) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>
